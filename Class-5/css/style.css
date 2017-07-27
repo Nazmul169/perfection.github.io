@@ -1,0 +1,174 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+a:hover { text-decoration: none }
+.section-padding {
+  padding: 80px 0;
+}
+.author-img {
+    position: relative;
+}
+
+div[class*="author-img-hover"] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background: #ddd;
+    z-index: -1;
+    opacity: .6;
+}
+
+.author-img-inner {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.author-img-inner h2 {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+body {
+    font-weight: 300;
+}
+
+div[class*="author-img-hover"] {
+    text-align: center;
+}
+
+.social-links a {
+    color: #ddd;
+    display: inline-block;
+    padding: 5px;
+}
+
+.single-team-box h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #919191;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin-top: 19px;
+}
+
+.single-team-box h3 span {
+    display: block;
+    font-size: 70%;
+    margin-top: 5px;
+}
+
+/*Section-1=====================================================================*/
+
+.author-img-hover-1 {
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.single-team-box:hover .author-img-hover-1 {
+    opacity: 1;
+    visibility: visible;
+}
+.author-img-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+/*For section 2================================================================*/
+
+.team-section-2 {
+  overflow: hidden;
+}
+
+.author-img-hover-2 {
+  left: -100%;
+  top: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+ .single-team-box:hover .author-img-hover-2 {
+  left: 0;
+  visibility: visible;
+}
+
+/*For Section 3=========================================================*/
+
+.author-img-hover-3 {
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transform: scale(0);
+  visibility: hidden;
+  transition: .3s ease;
+}
+.single-team-box:hover .author-img-hover-3 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+
+}
+
+/*For section 4==============================================================*/
+
+.author-img-hover-4 {
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: rotate(0);
+  transition: .3s ease;
+}
+.single-team-box:hover .author-img-hover-4 {
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(360deg);
+}
+
+/*For section-5=================================================================*/
+.author-img-hover-5 {
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.single-team-box:hover .author-img-hover-5 {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
