@@ -37,9 +37,9 @@ a:hover { text-decoration: none }
 }
 
 .news-letter-bg h2 {
-    font-size: 40px;
+    font-size: 28px;
     text-transform: uppercase;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
 }
 
 .section-padding.news-letter-bg::after {
@@ -71,13 +71,14 @@ input[type="submit"] {
 }
 
 p.news-letter-text {
-    margin-top: 45px;
+    margin-top: 28px;
     font-style: italic;
+    font-size: 16px;
 }
 
 .bordered-box {
     position: relative;
-    margin-top: -160px;
+    margin-top: -170px;
     background: #fff;
     z-index: 9;
     overflow: hidden;
@@ -87,15 +88,15 @@ p.news-letter-text {
     width: 50%;
     float: left;
     text-align: center;
-    padding: 50px 80px;
+    padding: 50px 60px;
     border: 1px solid #ddd;
     color: #888;
-    min-height: 378px;
+    min-height: 303px;
 }
 
 .single-bordered-box h4 {
     text-transform: uppercase;
-    font-size: 31px;
+    font-size: 20px;
     color: #000;
     margin-bottom: 32px;
 }
@@ -103,7 +104,7 @@ p.news-letter-text {
 p.author-name {
     color: #000;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
     margin-top: 18px;
     font-style: normal;
@@ -113,10 +114,18 @@ a.boxed-btn {
     border-radius: 20px;
     background: #333333;
     color: #fff;
-    padding: 13px 41px;
+    padding: 8px 30px;
     margin-top: 17px;
     display: inline-block;
 }
 .single-testimonial-box {
     font-style: italic;
+}
+input[type="email"]:focus::-webkit-input-placeholder {
+    color: transparent;
+    transition: 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+input:focus::-moz-placeholder { color:transparent; }
+b.about-section-word-highlight {
+    color: #000;
 }
