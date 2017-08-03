@@ -1,0 +1,162 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+a:hover { text-decoration: none }
+.section-padding {
+  padding: 80px 0;
+}
+.slide-bg-1 {
+  background-image: url(../images/bg-office-1.jpg);
+}
+.slide-bg-2 {
+  background-image: url(../images/bg-office-2.jpg);
+}
+.slide-bg-3 {
+  background-image: url(../images/bg-office-3.jpg);
+}
+
+.boxed-btn,.welcome-area::after {
+  background: #005997; /* Old browsers */
+  background: -moz-linear-gradient(left, #005997 0%, #0096be 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #005997 0%,#0096be 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #005997 0%,#0096be 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005997', endColorstr='#0096be',GradientType=1 ); /* IE6-9 */
+}
+.welcome-area {
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-area::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 100%;
+    z-index: -1;
+    content: "";
+}
+
+.logo a, .mainmenu a {
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 8px;
+}
+.mainmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mainmenu ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.mainmenu li a {
+    display: block;
+    padding: 17px;
+}
+.header-right-content a {
+    color: #000;
+}
+
+.social-links {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 20px;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+}
+
+
+
+.social-links a {
+    display: inline-block;
+    padding: 0px 5px;
+    font-size: 14px;
+}
+
+.header-area {
+    padding: 35px 0px;
+}
+.single-slide-item {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: table;
+    width: 100%;
+}
+
+.welcome-area {
+    padding-bottom: 100px;
+}
+
+a.boxed-btn {
+  display: inline-block;
+  padding: 12px 31px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.slide-inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.slide-text {
+    color: #fff;
+    padding: 130px;
+    max-width: 700px;
+}
+.slide-text h4 {
+    color: #40ADCC;
+    font-size: 21px;
+}
+
+.slide-text {
+    text-transform: uppercase;
+}
+
+.slide-text h2 {
+    color: #333;
+    font-size: 49px;
+    margin: 8px 0 54px;
+}
+.section-slides .owl-nav div {
+    color: #fff;
+    display: inline-block;
+    margin-right: 13px;
+    font-size: 15px;
+    margin-top: 20px;
+    opacity: .3;
+}
+.header-right-content {
+    padding-top: 18px;
+}
