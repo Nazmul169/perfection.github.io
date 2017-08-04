@@ -1,0 +1,115 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+a:hover { text-decoration: none }
+.section-padding {
+  padding: 80px 0;
+}
+
+
+.pricing-title-wrap {
+	background-image: url(../images/pricing-table-bg.jpg);
+}
+.section-padding.pricing-title-wrap h2 {
+    text-align: center;
+    font-weight: 300;
+    color: #777;
+    font-size: 50px;
+}
+
+.section-padding.pricing-title-wrap {
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+.pricing-header {
+    display: table;
+    background: #2B303B;
+    width: 100%;
+    height: 250px;
+    color: gray;
+    text-align: center;
+    position: relative;
+}
+
+.pricing-header-inner {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+.pricing-header h2 {
+    font-size: 50px;
+    color: #fff;
+}
+
+p.special-pricing {
+    position: absolute;
+    width: 100%;
+    line-height: 20px;
+    left: 0;
+    font-size: 19px;
+    color: #fff;
+    text-transform: uppercase;
+    top: -48px;
+    background: #21252D;
+    padding: 14px;
+}
+p.pricing-subTitle {
+    background: #F0F0F0;
+    margin: 0;
+    padding: 14px;
+    text-align: center;
+    font-size: 120%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.pricing-list-content {
+    padding: 30px;
+    font-size: 110%;
+}
+p.pricing-note {
+    opacity: .6;
+    font-size: 70%;
+    margin-left: -10px;
+    margin-top: 24px;
+}
+.section-padding.pricing-title-wrap {
+    padding-top: 40px;
+    padding-bottom: 200px;
+}
+
+.pricing-list-wrap {
+    margin-top: -110px;
+}
+
+.pricing-list-wrap.content-block .row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.pricing-list-wrap .col-md-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.pricing-list-content p {
+    margin-bottom: 18px;
+}
