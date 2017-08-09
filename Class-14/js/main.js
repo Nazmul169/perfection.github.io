@@ -1,5 +1,7 @@
 jQuery(document).ready(function($){
   $(".portfolio-list").masonry({
-  	horizontalOrder: true
+  	itemSelector: '.single-list-item',
+  	horizontalOrder: true,
+  	gutter: 10,
   });
 });

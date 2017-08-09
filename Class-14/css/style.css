@@ -47,11 +47,12 @@ a:hover { text-decoration: none }
 .single-list-item {
     background-size: cover;
     background-position: center;
-    width: 33.3333%;
+    width: calc( 33.3333% - 10px);
     height: 300px;
     float: left;
     position: relative;
     z-index: 2;
+    margin-bottom: 10px;
 }
 
 .portfolio-list {
