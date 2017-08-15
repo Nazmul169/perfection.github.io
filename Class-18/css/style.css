@@ -1,0 +1,106 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+a:hover { text-decoration: none }
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-bg-1 {
+	background-image: url(../images/education-1.jpg);
+}
+
+.single-service-box-bg-1 {
+	background-image: url(../images/service-1.jpg);
+}
+.single-service-box-bg-2 {
+	background-image: url(../images/service-2.jpg);
+}
+.single-service-box-bg-3 {
+	background-image: url(../images/service-3.jpg);
+}
+.single-service-box-bg-4 {
+	background-image: url(../images/service-4.jpg);
+}
+.single-service-box-bg-5 {
+	background-image: url(../images/service-5.jpg);
+}
+.single-service-box-bg-6 {
+	background-image: url(../images/service-6.jpg);
+}
+.single-service-box-bg-7 {
+	background-image: url(../images/service-7.jpg);
+}
+.single-service-box-bg-8 {
+	background-image: url(../images/service-8.jpg);
+}
+
+.section-padding {
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    position: relative;
+}
+
+.section-overlay::after ,.single-service-box::after {
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .8;
+}
+
+.single-service-box {
+    display: table;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    background-size: 150%;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background-color: #003A59;
+    transition: .3s;
+}
+
+.service-box-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.single-service-box::after {
+    background: #003A59;
+}
+
+.single-service-box:hover {
+    background-size: 200%;
+}
+
+.single-service-box:hover::after {
+    opacity: .6;
+}
