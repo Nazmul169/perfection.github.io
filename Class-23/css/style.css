@@ -1,0 +1,120 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+a:hover { text-decoration: none }
+.section-padding {
+  padding: 80px 0;
+  margin-bottom: 200px;
+}
+
+h2 {
+    padding: 21px;
+    background: #02A8DB;
+    color: #fff;
+    text-align: center;
+    font-size: 23px;
+}
+/*menu styling start============================================== */
+
+.mainmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.mainmenu ul li {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.mainmenu ul li a {
+    display: block;
+    padding: 15px;
+    color: #222856;
+}
+.mainmenu li ul {
+    position: absolute;
+    width: 250px;
+    background: #000;
+    left: 0;
+    padding: 15px 0px;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 500;
+}
+
+.mainmenu li ul li {
+    display: block;
+}
+
+.mainmenu li ul li a {
+    color: #989898;
+}
+
+.mainmenu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mainmenu li:hover > a {
+    color: #DD4E41;
+}
+
+.mainmenu li:hover li:hover > a {
+    background-color: #069CD2;
+    color: #fff;
+}
+
+/*menu styling end============================================== */
+
+
+/*margin effect*/
+
+.mainmenu.margin-effect ul li ul {
+	margin-top: 30px;
+}
+
+.mainmenu.margin-effect ul li:hover ul {
+	margin-top: 0px;
+}
+
+/*scale effect*/
+
+.mainmenu.scale-effect ul li ul {
+	transform: scale(2);
+}
+
+.mainmenu.scale-effect ul li:hover ul {
+	transform: rotate(360deg) scale(1);
+}
+
+/*rotate effect*/
+
+.mainmenu.rotation-effect ul li ul {
+	transform: rotate(0deg) scale(0);
+}
+
+.mainmenu.rotation-effect ul li:hover ul {
+	transform: rotate(360deg) scale(1);
+}
