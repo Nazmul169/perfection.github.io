@@ -1,0 +1,243 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: 'Muli', sans-serif;
+}
+a:hover { text-decoration: none }
+.section-padding {
+  padding: 80px 0;
+}
+
+.portfolio-bg-1 {
+    background-image: url(../images/portfolio-bg-1.jpg);
+}
+.portfolio-bg-2 {
+    background-image: url(../images/portfolio-bg-2.jpg);
+}
+.portfolio-bg-3 {
+    background-image: url(../images/portfolio-bg-3.png);
+}
+.portfolio-bg-4 {
+    background-image: url(../images/portfolio-bg-4.png);
+}
+.portfolio-bg-5 {
+    background-image: url(../images/portfolio-bg-5.jpg);
+}
+.portfolio-bg-6 {
+    background-image: url(../images/portfolio-bg-6.jpg);
+}
+.portfolio-bg-7 {
+    background-image: url(../images/portfolio-bg-7.jpg);
+}
+.portfolio-bg-8 {
+    background-image: url(../images/portfolio-bg-8.png);
+}
+.portfolio-bg-9 {
+    background-image: url(../images/portfolio-bg-9.jpg);
+}
+.portfolio-bg-10 {
+    background-image: url(../images/portfolio-bg-10.jpg);
+}
+.portfolio-bg-11 {
+    background-image: url(../images/portfolio-bg-11.jpg);
+}
+
+
+.logo h1 {
+    font-size: 22px;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.logo h1 span {
+    font-size: 8px;
+    position: absolute;
+    top: 3px;
+    right: -18px;
+}
+
+.logo a {
+    color: #000000;
+}
+
+.trigger-menu {
+    display: inline-block;
+    width: 30px;
+}
+
+span.trigger-menu span {
+    height: 2px;
+    display: block;
+    background: #000;
+    transition: .2s;
+}
+
+.trigger-menu span:nth-child(2) {
+    margin: 7px 0;
+}
+
+.trigger-menu:hover span:nth-child(1), .trigger-menu:hover span:nth-child(3) {
+    margin: 0 5px;
+}
+
+.header-area {
+    padding: 41px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+}
+
+.single-portfolio-item {
+    background-size: 100%;
+    background-position: center;
+    float: left;
+    width: 25%;
+    height: 330px;
+    display: table;
+    transition: .5s;
+}
+
+.portfolio-hover {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+.portfolio-hover h2 {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.portfolio-hover a {
+    color: #000;
+}
+
+.portfolio-hover p {
+    opacity: .5;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.single-portfolio-item:hover .portfolio-hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-hover p:hover {
+    opacity: 1;
+}
+
+.single-portfolio-item:hover {
+    background-size: 120%;
+}
+.single-portfolio-item.large {
+    height: 660px;
+}
+
+.single-portfolio-item.boxed {
+    height: 660px;
+    width: 50%;
+}
+
+/*Footer area=========================================================== */
+.footer-area {
+    background: #613AD6;
+    line-height: 2;
+    padding: 70px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.footer-area a {
+    color: #fff;
+}
+
+.footer-area p {
+    color: #fff;
+    opacity: .8;
+}
+
+.footer-area ul {
+    color: #fff;
+    opacity: .8;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+.footer-area h2 {
+    font-size: 22px;
+}
+
+h2.footer-logo {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h2.footer-logo a span {
+    position: absolute;
+    font-size: 5px;
+    right: -18px;
+}
+
+h2.footer-logo a {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-area li a {
+    opacity: .6;
+    transition: .3s;
+}
+
+.footer-area li a:hover {
+    opacity: 1;
+}
+.footer-area h2.underline {
+    position: relative;
+    z-index: 2;
+}
+.footer-area h2.underline:after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 2;
+    left: 0;
+    bottom: 100%;
+}
+.portfolio-list {
+    margin-bottom: 245px;
+    position: relative;
+    z-index: 2;
+}
