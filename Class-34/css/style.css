@@ -1,0 +1,158 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+a:hover { text-decoration: none }
+.section-padding {
+  padding: 80px 0;
+}
+html,body {
+    height: 100%;
+}
+.section-padding {
+  padding: 150px 0;
+  height: 100vh;
+}
+
+.section-bg {
+    background-image: url(../images/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.section-overlay::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #052939;
+    content: "";
+    z-index: -1;
+    opacity: .5;
+}
+
+/*.section-overlay:hover:after {
+    opacity: .8;
+}*/
+
+.section-title {
+	text-align: center;
+	color: #fff;
+}
+.section-title h2 {
+    text-transform: uppercase;
+}
+span.blue-color {
+    color: #03A3E7;
+}
+
+.section-title p {
+    color: #8AB0C0;
+    margin-top: 35px;
+}
+
+.section-title {
+    padding: 70px 0;
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline::after {
+    position: absolute;
+    content: "";
+    background: skyblue;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    z-index: -1;
+}
+
+.single-timeline-item {
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 104px;
+}
+
+img.timeline-frame {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid skyblue;
+    padding: 3px;
+    margin: 0 auto;
+    display: block;
+}
+
+.timeline-text {
+    background: #052939;
+    color: #8FAFC0;
+    text-align: right;
+    width: 400px;
+    position: absolute;
+    left: -450px;
+    height: 180px;
+    padding: 37px;
+    top: 50%;
+    margin-top: -90px;
+    border-radius: 12px;
+}
+
+.timeline-text h3 {
+    color: #0778BD;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+ .single-timeline-item:nth-child(2n+2) .timeline-text /* child */  { 
+    left: auto; /* two position define needed */
+    right: -450px;
+}
+.single-timeline-item:nth-child(2n+1) .timeline-text:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #052939;
+    border-bottom: 15px solid transparent;
+    margin-top: -15px;
+}
+
+.single-timeline-item:nth-child(2n+2) .timeline-text:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    border-top: 15px solid transparent;
+    border-right: 30px solid #052939;
+    border-bottom: 15px solid transparent;
+    margin-top: -15px;
+}
