@@ -102,7 +102,7 @@ a:hover { text-decoration: none }
 }
 
 
-.pricing-list {
+.pricing-list,.pricing-btn {
     border-left: 1px solid #ddd;
 }
 
