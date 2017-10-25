@@ -1,0 +1,150 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+a:hover { text-decoration: none }
+
+
+.section-padding {
+  padding: 80px 0;
+}
+.stethoscope-bg {
+    background: url(../images/bg-1.png) no-repeat scroll right bottom;
+}
+
+.stethoscope-bg .col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.stethoscope-bg .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.section-title h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+
+.section-title h2 span.clr-blu {
+    color: #2BB6F7;
+}
+
+.single-pricing-item {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+}
+
+.pricing-heading {
+    padding: 117px 30px 9px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.pricing-heading.clr-cyan {
+    background: #01BCD5;
+}
+
+.pricing-heading.clr-blu {
+    background: #01A4EF;
+}
+
+.pricing-heading.clr-skyblu {
+    background: #2BB6F7;
+}
+
+.pricing-heading h2 {
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.price-circle {
+    position: absolute;
+    background: #3A3D50;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    left: 30px;
+    top: 0;
+    margin-top: -60px;
+    padding-top: 30px;
+    text-transform: lowercase;
+}
+.price-circle span {
+    font-size: 25px;
+    color: #2BB6F7;
+}
+
+
+.pricing-list {
+    border-left: 1px solid #ddd;
+}
+
+.pricing-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pricing-list ul li {
+    color: #6E8189;
+    padding: 10px 25px; 
+}
+.pricing-list ul li:nth-child(2n+2) {
+    background-color: #E0E0E0;
+}
+.pricing-list li::before {
+    font-family: FontAwesome;
+    content:"\f045";
+    margin-right: 10px;
+}
+.pricing-btn {
+    padding: 40px 25px;
+}
+a.order-btn {
+    color: #82BDF0;
+    text-transform: uppercase;
+    font-size: 25px;
+    border: 1px solid #A7CDF5;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: .2s;
+    border-radius: 4px;
+}
+
+a.order-btn:hover {
+    background: #A7CDF5;
+    color: #fff;
+}
+.section-padding {
+    background-color: #EEEEEE;
+}
+.col-md-4:nth-child(3n) .pricing-list,.col-md-4:nth-child(3n) .pricing-btn {
+    border-right: 1px solid #ddd;
+}
