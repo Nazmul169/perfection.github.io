@@ -1,0 +1,44 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+a:hover { text-decoration: none }
+.section-padding {
+  padding: 80px 0;
+  background: #E97589;
+  text-align: center;
+  color: #fff;
+  margin-top: 200px;
+}
+.section-padding h2 {
+    text-transform: uppercase;
+}
+.section-padding canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.section-padding {
+    position: relative;
+}
