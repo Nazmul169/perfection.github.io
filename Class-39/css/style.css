@@ -1,0 +1,106 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+a:hover { text-decoration: none }
+
+[class*="bg"] {
+	background-size: cover;
+	background-position: center;
+}
+
+.section-padding {
+  padding: 150px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.before-part {
+	position: relative;
+	z-index: 1;
+}
+.section-padding h2 {
+	position: relative;
+}
+
+.section-padding h2::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 30%;
+	height: 2px;
+	background: #2C83C6;
+}
+
+.section-bg {
+	background-image: url(../images/bg-1.jpg);
+}
+
+
+.section-padding {
+    color: #fff;
+    line-height: 1.8;
+}
+
+.single-item h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.section-padding h2 {
+    font-size: 35px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    margin-bottom: 172px;
+}
+.overlay-blu,.overlay-black {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40%;
+	height: 100%;
+	z-index: -1;
+	background: #0F92CC;
+	opacity: .5;
+	visibility: visible;
+}
+.overlay-black {
+    background: #000;
+    width: 60%;
+    right: 0;
+    left: auto;
+    opacity: .7;
+}
+
+.single-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+
+.single-item i.fa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    margin-left: -15px;
+}
