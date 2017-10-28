@@ -1,0 +1,85 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Vidaloka');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Vidaloka', serif;
+    line-height: 1.6;
+}
+a:hover { text-decoration: none }
+
+
+.section-padding {
+  padding: 150px 0;
+}
+
+.border-img {
+	height: 450px;
+	margin-right: -200px;
+	width: 550px;
+	position: relative;
+	z-index: 1;
+}
+.border-img:after {
+	content: "";
+	position: absolute;
+	right: -20px;
+	bottom: -20px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	border: 1px solid #ddd;
+}
+.section-bg {
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+}
+.section-bg-1 {
+	background-image: url(../images/section-bg-1.jpg);
+}
+.section-bg-2 {
+	background-image: url(../images/section-bg-2.jpeg);
+}
+.left-side-bg {
+    margin-right: 0;
+    margin-left: -170px;
+}
+h2 {
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+a.boxed-btn {
+    display: inline-block;
+    padding: 21px 40px;
+    background: #C7A05B;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 48px;
+}
+
+a.boxed-btn i.fa {
+    margin-left: 18px;
+}
+
+.section-padding .col-lg-8,.section-padding .col-md-7  {
+    padding-left: 30px;
+    padding-right: 30px;
+}
