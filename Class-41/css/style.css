@@ -1,0 +1,130 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+a:hover { text-decoration: none }
+
+
+.footer-upper-area {
+    background: #F0F4C3;
+    padding: 40px 25px;
+    margin-top: 200px;
+}
+.newsletter-text h2 {
+    font-size: 24px;
+}
+
+.newsletter-form {
+	margin-left: 20px;
+	color: #000;
+	margin-top: 10px;
+	
+}
+
+.newsletter-form input[type=email] {
+    border: none;
+    background: #fff;
+    width: 70%;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 15px;
+}
+
+.newsletter-form button {
+    background: none;
+    width: 25%;
+    border: none;
+    padding: 10px;
+    display: inline-block;
+    float: right;
+    background: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+.footer-bottom-area {
+    padding: 20px;
+}
+
+.footer-bottom-area .container {
+    position: relative;
+}
+
+.styled-bg {
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    left: -160px;
+    bottom: 0;
+    z-index: 2;
+}
+.styled-bg-inner {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.styled-bg-1 {
+	background-image: url(../images/bg-1.jpg);
+}
+
+.styled-bg::after{
+	content: "";
+	position: absolute;
+	left: -20px;
+	bottom: -20px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: #ddd;
+}
+.footer-menu {
+    margin-bottom: 20px;
+}
+
+
+.footer-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    color: #000;
+}
+
+.footer-menu ul li a {
+    padding-left: 20px;
+    color: #000;
+}
+
+.copyright-text {
+    font-style: italic;
+}
+
+.copyright-text h2 {
+    font-size: 20px;
+}
+.social-links a {
+    color: #000;
+    padding-left: 10px;
+}
+
+
+
