@@ -1,0 +1,148 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 	.float-right-section {
+    text-align: left;
+}
+.header-area .social-icon {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-top: -20px;
+}
+.service-bg {
+    height: 300px;
+}
+.single-service-item {
+    margin-bottom: 50px;
+}
+.cta-section p {
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+.footer-about-us, .footer-navigation, .footer-latest-news ,
+.footer-get-in-touch {
+ margin-bottom: 40px;
+}
+
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+	
+.header-area {
+  padding-top: 15px;
+}
+.header-area span {
+    display: block;
+    margin-bottom: 10px;
+}
+.float-right-section {
+    text-align: left;
+}
+
+span.contact-info.telephone {
+    margin-left: 0;
+    margin-right: 0;
+}
+.header-area .social-icon {
+    padding: 15px 0;
+}
+.check-in {
+    line-height: 0;
+}
+.float-left {
+    float: none;
+}
+.menu-item {
+    float: none;
+}
+.menu-item ul li a {
+    display: block;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.menu-item ul li {
+    float: none;
+}
+.float-left a {
+    display: block;
+    text-align: center;
+}
+.home-area-slide-text h1 {
+    font-size: 30px;
+}
+.home-area-slide-text p {
+    line-height: inherit;
+}
+.single-service-item {
+    margin-bottom: 20px;
+}
+.about-bg {
+    height: 300px;
+    width: 100%;
+margin-top: 30px;
+}
+.about-text {
+    width: 100%;
+    margin-top: 30px;
+    display: table;
+    height: 100%;
+    padding-left: 0px;
+}
+.about-text p {
+    line-height: inherit;
+}
+.cta-section p {
+    font-size: 14px;
+line-height: inherit;
+float: none;
+    text-align: center;
+letter-spacing: 1px;
+}
+.cta-section a.boxed-btn {
+    display: block;
+    font-size: 14px;
+    padding: 10px 6px;
+    margin-top: 15px;
+float: none;
+}
+
+.project-bg {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+.project-text {
+margin-top: 20px;
+    width: 100%;
+    float: none;
+padding-left: 0px;
+}
+.single-project-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    overflow: visible;
+    margin-top: 50px;
+    height: auto;
+
+}
+
+.single-team-item {
+    margin-top: 30px;
+}
+
+.footer-about-us, .footer-navigation, .footer-latest-news ,
+.footer-get-in-touch {
+ margin-bottom: 40px;
+}
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}
