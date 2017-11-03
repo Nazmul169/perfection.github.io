@@ -1,0 +1,54 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Lato' , sans-serif;
+    font-size: 15px;
+}
+a:hover { text-decoration: none }
+
+[class*="bg"] {
+	background-size: cover;
+	background-position: center;
+}
+
+.section-padding {
+  padding: 150px 0;
+}
+
+.before-part {
+	position: relative;
+	z-index: 1;
+}
+
+.before-part::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: #000;
+	opacity: .5;
+	visibility: visible;
+}
+
+.section-bg {
+	background-image: url(../images/bg-1.jpg);
+}
