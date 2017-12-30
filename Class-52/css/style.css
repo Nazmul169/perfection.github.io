@@ -1,0 +1,122 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+a:hover { text-decoration: none }
+
+
+.section-padding {
+  padding: 150px 0;
+}
+
+.before-part {
+	position: relative;
+	z-index: 1;
+}
+
+.before-part::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: #000;
+	opacity: .5;
+	visibility: visible;
+}
+
+.section-bg {
+	background-image: url(../images/bg-1.jpg);
+}
+
+
+
+.service-bg img {
+    width: 100%;  /*full width of the DIV*/
+}
+
+.service-title {
+    text-align:  center;
+    padding: 10px;
+    background:  #6F0907;
+    color:  #fff;
+}
+
+.single-service-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+.fake-service .service-bg,.fake-service h2 {
+    opacity:  0;
+    visibility:  hidden;
+}
+
+.service-cta {
+    position:  absolute;
+    top:  0;
+    left:  0;
+    width:  100%;
+    height: 100%;
+    background: #094F83;
+    text-align:  center;
+    color: #fff;
+}
+
+.service-cta-inner {
+    display:  table;
+    width:  100%;
+    height: 100%;
+}
+
+.service-cta a {
+    color: #fff;
+    display: block;
+    background: #E2A344;
+    width:  70%;
+    margin: 0 auto;
+}
+
+.service-cta-table-cell {
+    display:  table-cell;
+    vertical-align:  middle;
+}
+
+.service-cta a:hover {
+    color: #fff;
+}
+
+.service-cta span {
+    display:  block;
+    margin: 7px 0;
+    font-size:  14px;
+    font-weight:  normal;
+}
+
+
+
+.service-cta p {
+    font-size: 20px;
+    font-weight: 700;
+}
+.single-service-item img {
+    max-height: 280px;
+}
