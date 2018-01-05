@@ -1,0 +1,97 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+a:hover { text-decoration: none }
+
+[class*="bg"] {
+	background-size: cover;
+	background-position: center;
+}
+
+.section-padding {
+  /* padding: 150px 0; */
+  margin-top: 50px;
+}
+
+.before-part {
+	position: relative;
+	z-index: 1;
+}
+
+.before-part::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: #000;
+	opacity: .5;
+	visibility: visible;
+}
+
+.section-bg-1 {
+	background-image: url(../images/banner-1.jpg);
+}
+.section-bg-2 {
+	background-image: url(../images/banner-2.jpg);
+}
+
+.zigzag-text {
+    position:  relative;
+    z-index: 2;
+    padding-right: 50px;
+    padding-top:  120px;
+    padding-bottom: 120px;
+}
+.section-bg-2 .zigzag-text {
+    padding-right: 0;
+    padding-left: 50px;
+    color: #fff;
+}
+.zigzag-text:after {
+    background-color: #8EC361;
+    content:  "";
+    position:  absolute;
+    left: -4900%;
+    top:  0;
+    width: 5000%;
+    height:  100%;
+    z-index: -1;
+    opacity: .6;
+    transform: skew(13deg);
+}
+
+.section-bg-2 .zigzag-text:after {
+    left: auto;
+    right: -4900%;
+    background-color: #00CCCD;
+}
+.boxed-btn {
+    background-color:  #424242;
+    color:  #fff;
+    padding:  12px 20px;
+    text-transform:  uppercase;
+    border-radius:  5px;
+    margin-top:  20px;
+    display: inline-block;
+}
